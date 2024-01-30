@@ -1,0 +1,384 @@
+:root {
+  --color01: #232943;
+  --color02: #ff256a;
+  --color03: #ff4e86;
+  --blanco-grisaceo: rgba(255, 255, 255, 0.485);
+  --colorbackground02: #0B0B0B;
+  --colorbackground01: #02060d;
+  --padding-section: 6vw;
+}
+
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+textarea {
+  margin-bottom: 0 !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section1 {
+  padding: 1vh var(--padding-section);
+  background-image: url(/assets/register.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.447);
+  background-blend-mode: multiply;
+  color: white;
+}
+.section1 .header nav .navbar-toggler-icon {
+  filter: invert(1);
+}
+.section1 .header nav .separarLogo {
+  color: white;
+  margin: 0;
+  padding: 0;
+  margin-right: 5rem;
+}
+.section1 .header nav .separarLogo img {
+  width: 4rem;
+}
+.section1 .header nav .nav-link {
+  color: white;
+  font-weight: bold;
+  margin: 0 20px;
+}
+.section1 .header nav .nav-link:hover {
+  color: white;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+.section1 .cosa {
+  display: flex;
+  justify-content: space-between;
+}
+.section1 .cosa .register {
+  padding: 20vh var(--padding-section);
+  display: flex;
+  flex-direction: column;
+}
+.section1 .cosa .register h2 {
+  color: var(--blanco-grisaceo);
+  font-weight: 700;
+  font-size: 1rem;
+}
+.section1 .cosa .register h3 {
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 15px 0;
+  letter-spacing: 2px;
+}
+.section1 .cosa .register h4 {
+  color: red;
+  font-size: 1rem;
+}
+.section1 .cosa .register span {
+  color: var(--blanco-grisaceo);
+}
+.section1 .cosa .register > div {
+  display: flex;
+}
+.section1 .cosa .register > div input {
+  background-color: rgba(245, 111, 147, 0.1568627451);
+  border-radius: 3px;
+  border: 1px solid transparent;
+  color: gray;
+  width: 100%;
+  margin: 5px 0px;
+  padding: 8px;
+}
+.section1 .cosa .register > div select {
+  background-color: rgba(245, 111, 147, 0.1568627451);
+  border-radius: 3px;
+  border: 1px solid transparent;
+  color: gray;
+  width: 100%;
+  margin: 5px 0px;
+  padding: 8px;
+}
+.section1 .cosa .register > div .cajaAddImage {
+  display: flex;
+  justify-content: flex-start;
+}
+.section1 .cosa .register > div .botonesForm a {
+  color: white;
+  text-decoration: none;
+}
+.section1 .cosa .register > div .botonesForm .clean {
+  margin-left: 15px;
+}
+.section1 .cosa .register > div button {
+  border: 1px solid transparent;
+  border-radius: 7px;
+  background-color: var(--color02);
+  color: white;
+  width: 100px;
+  padding: 10px;
+  margin: 16px 0px;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  font-weight: bold;
+}
+.section1 .cosa .register > div form {
+  display: flex;
+  flex-direction: column;
+}
+.section1 .cosa .register > div .field-group {
+  position: relative;
+  margin: 3px 0;
+}
+.section1 .cosa .register > div .field-group .input-field {
+  background-color: rgba(245, 111, 147, 0.1568627451);
+  border-radius: 7px;
+  border: 1px solid transparent;
+  color: gray;
+  width: 100%;
+  margin: 5px 0px;
+  padding: 8px;
+  padding-left: 50px;
+}
+.section1 .cosa .register > div .field-group .input-fieldFile {
+  background-color: rgba(245, 111, 147, 0.1568627451);
+  border-radius: 7px;
+  border: 1px solid rgba(255, 255, 255, 0.501);
+  color: gray;
+  width: 50%;
+  margin: 5px 0px;
+  padding: 8px;
+  padding-right: 0px;
+}
+.section1 .cosa .register > div .field-group .input-fieldFile:hover {
+  background-color: rgba(239, 208, 217, 0.1568627451);
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(234, 234, 234);
+}
+.section1 .cosa .register > div .field-group .input-field:hover {
+  background-color: rgba(239, 208, 217, 0.1568627451);
+}
+.section1 .cosa .register > div .field-group .icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.6rem;
+  filter: invert(1);
+}
+.section1 .cosa .register > div .field-group .iconDescription {
+  position: absolute;
+  left: 0;
+  top: -26px;
+  width: 50px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.6rem;
+  filter: invert(1);
+}
+.section1 .cosa .register > div .field-group .input-field:focus ~ .icon {
+  color: white;
+  border-color: white;
+}
+.section1 .cosa .logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 4rem;
+  filter: invert(1);
+}
+.section1 .cosa .logo img {
+  width: 7rem;
+}
+
+@media (width <= 600px) {
+  .section1 {
+    padding: 1vh var(--padding-section);
+    background-image: url(/assets/register.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.447);
+    background-blend-mode: multiply;
+    color: white;
+  }
+  .section1 .header nav .navbar-toggler-icon {
+    filter: invert(1);
+  }
+  .section1 .header nav .separarLogo {
+    color: white;
+    margin: 0;
+    padding: 0;
+    margin-right: 5rem;
+  }
+  .section1 .header nav .separarLogo img {
+    width: 4rem;
+  }
+  .section1 .header nav .nav-link {
+    color: white;
+    font-weight: bold;
+    margin: 0 20px;
+  }
+  .section1 .cosa {
+    display: flex;
+    justify-content: space-between;
+  }
+  .section1 .cosa .register {
+    padding: 7vh var(--padding-section);
+    display: flex;
+    flex-direction: column;
+  }
+  .section1 .cosa .register h2 {
+    color: var(--blanco-grisaceo);
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  .section1 .cosa .register h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 15px 0;
+    letter-spacing: 2px;
+  }
+  .section1 .cosa .register h4 {
+    color: red;
+    font-size: 1rem;
+  }
+  .section1 .cosa .register span {
+    color: var(--blanco-grisaceo);
+  }
+  .section1 .cosa .register > div {
+    display: flex;
+  }
+  .section1 .cosa .register > div input {
+    background-color: rgba(245, 111, 147, 0.1568627451);
+    border-radius: 3px;
+    border: 1px solid transparent;
+    color: gray;
+    width: 100%;
+    margin: 5px 0px;
+    padding: 8px;
+  }
+  .section1 .cosa .register > div select {
+    background-color: rgba(245, 111, 147, 0.1568627451);
+    border-radius: 3px;
+    border: 1px solid transparent;
+    color: gray;
+    width: 100%;
+    margin: 5px 0px;
+    padding: 8px;
+  }
+  .section1 .cosa .register > div .cajaAddImage {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .section1 .cosa .register > div .botonesForm a {
+    color: white;
+    text-decoration: none;
+  }
+  .section1 .cosa .register > div .botonesForm .clean {
+    margin-left: 15px;
+  }
+  .section1 .cosa .register > div button {
+    border: 1px solid transparent;
+    border-radius: 7px;
+    background-color: var(--color02);
+    color: white;
+    width: 100px;
+    padding: 10px;
+    margin: 16px 0px;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    font-weight: bold;
+  }
+  .section1 .cosa .register > div form {
+    display: flex;
+    flex-direction: column;
+  }
+  .section1 .cosa .register > div .field-group {
+    position: relative;
+    margin: 3px 0;
+  }
+  .section1 .cosa .register > div .field-group .input-field {
+    background-color: rgba(245, 111, 147, 0.1568627451);
+    border-radius: 7px;
+    border: 1px solid transparent;
+    color: gray;
+    width: 100%;
+    margin: 5px 0px;
+    padding: 8px;
+    padding-left: 50px;
+  }
+  .section1 .cosa .register > div .field-group .input-fieldFile {
+    background-color: rgba(245, 111, 147, 0.1568627451);
+    border-radius: 7px;
+    border: 1px solid rgba(255, 255, 255, 0.501);
+    color: gray;
+    width: 50%;
+    margin: 5px 0px;
+    padding: 8px;
+    padding-right: 0px;
+  }
+  .section1 .cosa .register > div .field-group .input-fieldFile:hover {
+    background-color: rgba(239, 208, 217, 0.1568627451);
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(234, 234, 234);
+  }
+  .section1 .cosa .register > div .field-group .input-field:hover {
+    background-color: rgba(239, 208, 217, 0.1568627451);
+  }
+  .section1 .cosa .register > div .field-group .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.6rem;
+    filter: invert(1);
+  }
+  .section1 .cosa .register > div .field-group .iconDescription {
+    position: absolute;
+    left: 0;
+    top: -26px;
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.6rem;
+    filter: invert(1);
+  }
+  .section1 .cosa .register > div .field-group .input-field:focus ~ .icon {
+    color: white;
+    border-color: white;
+  }
+  .section1 .cosa .logo {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 4.6rem;
+    filter: invert(1);
+  }
+  .section1 .cosa .logo img {
+    width: 7rem;
+  }
+}/*# sourceMappingURL=createConcert.css.map */

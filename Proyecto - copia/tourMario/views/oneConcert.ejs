@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About</title>
+    <%- include('linkBootstrap') %>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <%- include('navbar') %>
+
+    <h1> One Concert</h1>
+    <br>
+
+    <h2>City: <%= result.city   %> </h2>
+    <h2>Address: <%= result.address   %> </h2>
+    <h2>Date: <%= result.date   %> </h2>
+    <h2>Schedule: <%= result.schedule   %> </h2>
+
+    <div>
+      <img width="300px" src=<%= result.image ? `/images/concerts/${result.image}`:
+      "/images/default_profile.jpg" %>
+  </div>
+
+
+  <a href="/concerts/showEditConcert/<%= result.concert_id %>">
+    <button class="btn btn-primary">Editar concierto</button>
+  </a>
+
+  <a href="/concerts/delConcert/<%= result.concert_id %>/<%= result.band_id %>">
+    <button class="btn btn-primary">borrar concierto</button>
+</a>
+
+
+<a href="/concerts/delLogicConcert/<%= result.concert_id %>/<%= result.band_id %>">
+  <button class="btn btn-primary">borrar concierto lógico</button>
+</a>
+
+
+<a href="/bands/oneBand/<%= result.band_id %>">
+  <button class="btn btn-primary">Volver a banda id</button>
+</a>
+
+
+
+
+
+
+
+    <%- include('scriptBootstrap') %>
+  </body>
+</html>

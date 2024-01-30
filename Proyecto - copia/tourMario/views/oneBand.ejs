@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About</title>
+    <%- include('linkBootstrap') %>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <%- include('navbar') %>
+
+    <h1>We're in One Band</h1>
+
+    <h2>Name: <%= band.band_name   %> </h2>
+    <h2>Style: <%= band.style   %> </h2>
+    <h2>email: <%= band.email   %> </h2>
+    <h2>phone: <%= band.phone_number   %> </h2>
+    <h2>Description: <%= band.description   %> </h2>
+
+    <div>
+      <img width="300px" src=<%= band.photo ? `/images/band/${band.photo}`:
+      "/images/default_profile.jpg" %>
+  </div>
+
+
+<a href="/">
+  <button class="btn btn-primary">Volver al home</button>
+</a>
+
+<a href="/concerts/createConcert/<%= band.band_id %> ">
+  <button class="btn btn-primary">Create Concert</button>
+</a>
+<br>
+<h3>Concerts:</h3>
+<br>
+
+
+<div class="d-flex flex-wrap gap-5 p-5">
+  <% concerts.forEach((elem) => { %>
+      <div class="d-flex flex-column">
+        <img width="300px" src=<%= elem.image ? `/images/concerts/${elem.image}`:
+        "/images/default_profile.jpg" %>
+          <h4>city: <%= elem.city %></h4>
+          <h4>address: <%= elem.address %></h4>
+          <a href="/concerts/showOneConcert/<%= elem. concert_id %>">
+              <button class="btn btn-primary">agrandar</button>
+          </a>
+      </div>
+  <% }) %>
+</div>
+
+
+
+
+
+
+
+    <%- include('scriptBootstrap') %>
+  </body>
+</html>

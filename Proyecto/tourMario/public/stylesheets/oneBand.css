@@ -1,0 +1,551 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+:root {
+  --color01: #232943;
+  --color02: #ff256a;
+  --color03: #ff4e86;
+  --blanco-grisaceo: rgba(255, 255, 255, 0.485);
+  --colorbackground02: #0b0b0b;
+  --colorbackground01: #02060d;
+  --padding-section: 6vw;
+}
+
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section1 {
+  padding: 1vh var(--padding-section);
+  background-image: url(/assets/login.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.447);
+  background-blend-mode: multiply;
+  color: white;
+}
+.section1 .header nav .navbar-toggler-icon {
+  filter: invert(1);
+}
+.section1 .header nav .separarLogo {
+  color: white;
+  margin: 0;
+  padding: 0;
+  margin-right: 5rem;
+}
+.section1 .header nav .separarLogo img {
+  width: 4rem;
+}
+.section1 .header nav .nav-link {
+  color: white;
+  font-weight: bold;
+  margin: 0 20px;
+}
+.section1 .header nav .nav-link:hover {
+  color: white;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+.section1 .profile {
+  padding: 5vh var(--padding-section);
+  margin: 2rem;
+  background-image: url(/assets/section3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.604);
+  background-blend-mode: multiply;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.section1 .profile .parteAlta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.section1 .profile .parteAlta h1 {
+  font-weight: bold;
+  font-size: 5rem;
+  font-family: "Bebas Neue";
+  letter-spacing: 1px;
+  margin: 0;
+}
+.section1 .profile .parteAlta .panelBotones {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section1 .profile .parteAlta .panelBotones a {
+  margin: 10px 25px;
+}
+.section1 .profile .parteAlta .panelBotones a img {
+  width: 22px;
+  filter: invert(1);
+}
+.section1 .profile .parteAlta .panelBotones button {
+  background: none;
+  border: 1px solid transparent;
+  font-weight: bold;
+}
+.section1 .profile .parteAlta .panelBotones button:hover {
+  color: var(--color02);
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+.section1 .profile .cosas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+.section1 .profile .cosas .imagen img {
+  width: 500px;
+}
+.section1 .profile .cosas .bandas {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  margin-left: 30px;
+}
+.section1 .profile .cosas .bandas h2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+.section1 .profile .cosas .bandas h3 {
+  font-size: 2rem;
+  font-weight: lighter;
+  color: var(--blanco-grisaceo);
+}
+.section1 .profile .cosas .bandas .marcaFooter {
+  filter: invert(1);
+}
+.section1 .profile .cosas .bandas .marcaFooter img {
+  width: 150px;
+  margin: 0 20px;
+}
+.section1 .profile .cosas .bandas > div {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin: 10px 0;
+  margin-bottom: 0;
+}
+.section1 .profile .cosas .bandas > div p {
+  font-size: 1.1rem;
+}
+.section1 .profile .cosas .bandas > div .telefono {
+  margin-left: 70px;
+}
+.section1 .profile .cosas .bandas > div img {
+  filter: invert(1);
+  width: 20px;
+  margin-right: 10px;
+}
+
+@media (width <= 1511px) {
+  .section1 .profile .parteAlta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  .section1 .profile .parteAlta h1 {
+    font-weight: bold;
+    font-size: 5rem;
+    font-family: "Bebas Neue";
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  .section1 .profile .parteAlta .panelBotones {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section1 .profile .parteAlta .panelBotones a {
+    margin: 10px 25px;
+  }
+  .section1 .profile .parteAlta .panelBotones a img {
+    width: 22px;
+    filter: invert(1);
+  }
+  .section1 .profile .parteAlta .panelBotones button {
+    background: none;
+    border: 1px solid transparent;
+    font-weight: bold;
+  }
+  .section1 .profile .parteAlta .panelBotones button:hover {
+    color: var(--color02);
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+  }
+  .section1 .profile .cosas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    scale: 0.9;
+  }
+  .section1 .profile .cosas .imagen img {
+    width: 500px;
+  }
+  .section1 .profile .cosas .bandas {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin-left: 30px;
+  }
+  .section1 .profile .cosas .bandas h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+  .section1 .profile .cosas .bandas h3 {
+    font-size: 2rem;
+    font-weight: lighter;
+    color: var(--blanco-grisaceo);
+  }
+  .section1 .profile .cosas .bandas .marcaFooter {
+    filter: invert(1);
+  }
+  .section1 .profile .cosas .bandas .marcaFooter img {
+    width: 150px;
+    margin: 0 20px;
+  }
+  .section1 .profile .cosas .bandas > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin: 10px 0;
+    margin-bottom: 0;
+  }
+  .section1 .profile .cosas .bandas > div p {
+    font-size: 1.1rem;
+  }
+  .section1 .profile .cosas .bandas > div .telefono {
+    margin: 0;
+  }
+  .section1 .profile .cosas .bandas > div img {
+    filter: invert(1);
+    width: 20px;
+    margin-right: 10px;
+  }
+}
+@media (width <= 1245px) {
+  .section1 .profile .cosas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    gap: 20px;
+    scale: 1;
+  }
+  .section1 .profile .cosas .imagen img {
+    width: 600px;
+  }
+  .section1 .profile .cosas .bandas {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin-left: 30px;
+  }
+}
+@media (width <= 992px) {
+  .section1 .profile .cosas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    gap: 20px;
+    scale: 1;
+  }
+  .section1 .profile .cosas .imagen img {
+    width: 400px;
+  }
+  .section1 .profile .cosas .bandas {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin-left: 30px;
+  }
+  .section1 .profile .cosas .bandas h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+  .section1 .profile .cosas .bandas h3 {
+    font-size: 2rem;
+    font-weight: lighter;
+    color: var(--blanco-grisaceo);
+  }
+  .section1 .profile .cosas .bandas .marcaFooter {
+    display: flex;
+    justify-content: center;
+    filter: invert(1);
+  }
+  .section1 .profile .cosas .bandas .marcaFooter img {
+    width: 150px;
+    margin: 0 20px;
+  }
+  .section1 .profile .cosas .bandas > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 10px 0;
+    margin-bottom: 0;
+  }
+  .section1 .profile .cosas .bandas > div p {
+    font-size: 1.1rem;
+  }
+  .section1 .profile .cosas .bandas > div .telefono {
+    margin: 0;
+  }
+  .section1 .profile .cosas .bandas > div img {
+    filter: invert(1);
+    width: 20px;
+    margin-right: 10px;
+  }
+}
+@media (width <= 660px) {
+  .section1 .profile .cosas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    gap: 20px;
+    scale: 1;
+  }
+  .section1 .profile .cosas .imagen img {
+    width: 300px;
+  }
+  .section1 .profile .cosas .bandas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+}
+.section2 {
+  padding: 15vh var(--padding-section);
+  background-image: url(/assets/fondo_conciertos.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.447);
+  background-blend-mode: multiply;
+  color: white;
+}
+.section2 h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 5rem;
+  font-family: "Bebas Neue";
+  letter-spacing: 1px;
+  margin: 0;
+}
+.section2 hr {
+  opacity: 1;
+  color: white;
+  height: 2px;
+  margin-bottom: 100px;
+}
+.section2 .tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section2 .tarjetas .boxConcert {
+  padding: 20px 40px;
+  background-color: rgba(11, 11, 11, 0.8705882353);
+  color: white;
+  border-radius: 10px;
+  box-shadow: rgba(226, 226, 226, 0.35) 0px 5px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.section2 .tarjetas .boxConcert .date p {
+  margin: 0;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.section2 .tarjetas .boxConcert .date hr {
+  margin: 0;
+  margin: 10px 0;
+  height: 1px;
+  opacity: 0.8;
+}
+.section2 .tarjetas .boxConcert .foto {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+.section2 .tarjetas .boxConcert .foto img {
+  width: 220px;
+  height: 140px;
+}
+.section2 .tarjetas .boxConcert .city {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.section2 .tarjetas .boxConcert .city h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.section2 .tarjetas .boxConcert .city p {
+  padding: 0;
+}
+.section2 .tarjetas .boxConcert .tickets {
+  margin: 0 10px;
+  filter: invert(1);
+}
+.section2 .tarjetas .boxConcert .tickets p {
+  margin: 0;
+}
+.section2 .tarjetas .boxConcert:hover {
+  background-color: rgba(43, 43, 43, 0.8705882353);
+  border: 1px solid white;
+}
+
+@media (width <= 992px) {
+  .section2 .tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .section2 .tarjetas .boxConcert {
+    padding: 20px 40px;
+    background-color: rgba(11, 11, 11, 0.8705882353);
+    color: white;
+    border-radius: 10px;
+    box-shadow: rgba(226, 226, 226, 0.35) 0px 5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    scale: 0.9;
+  }
+  .section2 .tarjetas .boxConcert .date p {
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .section2 .tarjetas .boxConcert .date hr {
+    margin: 0;
+    margin: 10px 0;
+    height: 1px;
+    opacity: 0.8;
+  }
+  .section2 .tarjetas .boxConcert .foto {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+  }
+  .section2 .tarjetas .boxConcert .foto img {
+    width: 220px;
+    height: 140px;
+  }
+  .section2 .tarjetas .boxConcert .city {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .section2 .tarjetas .boxConcert .city h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .section2 .tarjetas .boxConcert .city p {
+    padding: 0;
+  }
+  .section2 .tarjetas .boxConcert .tickets {
+    margin: 0 10px;
+    filter: invert(1);
+  }
+  .section2 .tarjetas .boxConcert .tickets p {
+    margin: 0;
+  }
+  .section2 .tarjetas .boxConcert:hover {
+    background-color: rgba(43, 43, 43, 0.8705882353);
+    border: 1px solid white;
+  }
+}
+@media (width <= 660px) {
+  .section2 .tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .section2 .tarjetas .boxConcert {
+    padding: 20px 40px;
+    background-color: rgba(11, 11, 11, 0.8705882353);
+    color: white;
+    border-radius: 10px;
+    box-shadow: rgba(226, 226, 226, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    scale: 0.8;
+  }
+  .section2 .tarjetas .boxConcert .date p {
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .section2 .tarjetas .boxConcert .date hr {
+    margin: 0;
+    margin: 10px 0;
+    height: 1px;
+    opacity: 0.8;
+  }
+  .section2 .tarjetas .boxConcert .foto {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+  }
+  .section2 .tarjetas .boxConcert .foto img {
+    width: 220px;
+    height: 140px;
+  }
+  .section2 .tarjetas .boxConcert .city {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .section2 .tarjetas .boxConcert .city h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .section2 .tarjetas .boxConcert .city p {
+    padding: 0;
+  }
+  .section2 .tarjetas .boxConcert .tickets {
+    margin: 0 10px;
+    filter: invert(1);
+  }
+  .section2 .tarjetas .boxConcert .tickets p {
+    margin: 0;
+  }
+  .section2 .tarjetas .boxConcert:hover {
+    background-color: rgba(43, 43, 43, 0.8705882353);
+    border: 1px solid white;
+  }
+}/*# sourceMappingURL=oneBand.css.map */

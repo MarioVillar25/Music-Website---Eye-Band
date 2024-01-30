@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index</title>
+    <%- include('linkBootstrap') %>
+    <link rel="stylesheet" href="/stylesheets/index.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <main>
+        <section class="section1 row">
+          <div class="col-12">
+            <div class="header"><%- include('navbar') %></div>
+            <div class="contenidoSection1">
+              <h1>Eye Band</h1>
+              <h2>The Best Summer Music Tour</h2>
+              <div class="numSection1">
+                <div>
+                  <p><span>DAYS</span></p>
+                  <div class="numeros">
+                    <p>1</p>
+                    <p>4</p>
+                  </div>
+                </div>
+                <div>
+                  <p><span>HOURS</span></p>
+                  <div class="numeros">
+                    <p>2</p>
+                    <p>7</p>
+                  </div>
+                </div>
+                <div>
+                  <p><span>MINUTES</span></p>
+                  <div class="numeros">
+                    <p>1</p>
+                    <p>6</p>
+                  </div>
+                </div>
+                <div>
+                  <p><span>SECOND</span></p>
+                  <div class="numeros">
+                    <p>0</p>
+                    <p>8</p>
+                  </div>
+                </div>
+              </div>
+              <button>Get your ticket</button>
+            </div>
+            <div class="redes">
+              <div>
+                <img src="/assets/facebook.png" alt="" />
+                <img src="/assets/instagram.png" alt="" />
+                <img src="/assets/twitter.png" alt="" />
+                <img src="/assets/youtube.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section2 row">
+          <div class="col-12">
+            <h2>History of Eye Band</h2>
+            <p class="lore">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ab,
+              cupiditate quis ea aliquam eos quos officiis alias harum impedit
+              ducimus necessitatibus nemo aperiam soluta a, ad tempore eum,
+              officia nam omnis aspernatur corrupti eaque asperiores. Libero
+              explicabo esse dignissimos? Ullam nesciunt rem consequatur,
+              dolorem consequuntur placeat recusandae nobis quae. Deserunt, fuga
+              doloremque harum dicta modi quaerat quae quos enim temporibus non,
+              quis, tempora hic impedit sunt illum vel! Soluta enim explicabo
+              cupiditate qui, dicta fuga pariatur at iusto provident?
+            </p>
+            <div class="contador">
+              <div>
+                <h3>3</h3>
+                <p>DAYS</p>
+              </div>
+              <div>
+                <h3>13</h3>
+                <p>ARTISTS</p>
+              </div>
+              <div>
+                <h3>4</h3>
+                <p>SCENES</p>
+              </div>
+            </div>
+            <div class="video">
+              <iframe
+                width="800"
+                height="485"
+                src="https://www.youtube.com/embed/qYtEepm-BlE?si=4QYxvrO5KQzmxW7A"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div><button>Get your ticket</button></div>
+          </div>
+        </section>
+
+        <section class="section3 row">
+          <div class="col-12">
+            <h3>Our Artists</h3>
+            <div class="hr">
+              <hr />
+            </div>
+
+            <div class="d-flex justify-content-center flex-wrap gap-4 p-5">
+              <% result.forEach((elem)=>{ %>
+              <div class="card d-flex flex-column">
+                <a href="/bands/oneBand/<%= elem.band_id %>">
+                <img width="300px" src=<%= elem.photo ?
+                `/images/band/${elem.photo}`: "/images/default_profile.jpg" %>
+                <hr>
+                <h3><%= elem.band_name %></h3>
+                <p><%= elem.style %></p>
+                <div>
+                    <button>See More</button>
+                </div>
+              </a>
+              </div>
+              <% }) %>
+            </div>
+
+           
+
+
+
+
+          
+          </div>
+        </section>
+
+
+
+        <section class="section4 row">
+          <div class="col-12 col-sm-4 col-lg-2 text-center">
+            <img 
+          
+            src="/assets/logo01.png" alt="">
+          </div>
+          <div class="col-12 col-sm-4 col-lg-2 text-center">
+            <img 
+          
+            src="/assets/logo02.png" alt="">
+          </div>
+          <div class="col-12 col-sm-4 col-lg-2 text-center">
+            <img 
+          
+            src="/assets/logo03.png" alt="">
+          </div>
+          <div class="col-12 col-sm-4 col-lg-2 text-center">
+            <img 
+          
+            src="/assets/logo04.png" alt="">
+          </div>
+          <div class="col-12 col-sm-4 col-lg-2 text-center">
+            <img 
+          
+            src="/assets/logo05.png" alt="">
+          </div>
+          <div class="col-12 col-sm-4 col-lg-2 text-center">
+            <img 
+          
+            src="/assets/logo06.png" alt="">
+          </div>
+
+        </section>
+        
+
+        <section class="section5 row">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <img 
+            class="w-100"
+            src="/assets/gal01.jpg" alt="">
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <img 
+            class="w-100"
+            src="/assets/gal02.jpg" alt="">
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <img 
+            class="w-100"
+            src="/assets/gal03.jpg" alt="">
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <img 
+            class="w-100"
+            src="/assets/gal04.jpg" alt="">
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <img 
+            class="w-100"
+            src="/assets/gal05.jpg" alt="">
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <img 
+            class="w-100"
+            src="/assets/gal06.jpg" alt="">
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <img 
+            class="w-100"
+            src="/assets/gal07.jpg" alt="">
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <img 
+            class="w-100"
+            src="/assets/gal08.jpg" alt="">
+          </div>
+
+        </section>
+
+        <section class="section6 row">
+          <div class="col-12">
+            <p>Stay Connected! Sign up for the newsletter & download an exclusive spontaneous music moment from Bryan Addams </p>
+
+            <div class="barra">
+              <div class="input-group">
+                <input type="search" class=" form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                <button type="button" class="btn btn-outline-primary" data-mdb-ripple-init>search</button>
+              </div>
+            </div>
+
+          
+
+          </div>
+
+        </section>
+
+        <footer class="footer row">
+          <div class="col-12">
+            <div class="palabras">
+              <p>Chords & Lyrics</p>
+              <p>Publishing</p>
+              <p>Contact</p>
+              <p>Legal</p>
+              <p>About</p>
+              <p>Testimonies</p>
+              <p>School of Music</p>
+              <p>Song Translations</p>
+              <p>Account</p>
+              <p>Terms and conditions</p>
+            </div>
+            <p class="lorenzo">Press: Lorenzo Von Matterhorn</p>
+
+            <div class="logosFooter">
+
+
+              <div>
+                <img src="/assets/twitter.png" alt="">
+              </div>
+              <div>
+                <img src="/assets/instagram.png" alt="">
+              </div>
+              <div>
+                <img src="/assets/logotipo-de-linkedin.png" alt="">
+              </div>
+              <div>
+                <img src="/assets/youtube.png" alt="">
+              </div>
+              <div>
+                <img src="/assets/facebook.png" alt="">
+              </div>
+
+          </div>
+
+                   <p class="copy">&copy EYE MUSIC </p>
+
+                   <div class="marcaFooter">
+                    <img src="/assets/marca.png" alt="">
+                  </div>
+
+
+
+            
+
+
+          </div>
+        </footer>
+
+
+
+       
+      </main>
+      <%- include('scriptBootstrap') %>
+    </div>
+  </body>
+</html>

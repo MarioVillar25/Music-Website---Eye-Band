@@ -1,0 +1,456 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+:root {
+  --color01: #232943;
+  --color02: #ff256a;
+  --color03: #ff4e86;
+  --blanco-grisaceo: rgba(255, 255, 255, 0.485);
+  --colorbackground02: #0b0b0b;
+  --colorbackground01: #02060d;
+  --padding-section: 6vw;
+}
+
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section1 {
+  padding: 1vh var(--padding-section);
+  background-image: url(/assets/login.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.447);
+  background-blend-mode: multiply;
+  color: white;
+}
+.section1 h4 {
+  margin: 10px 0;
+  color: red;
+  font-size: 1rem;
+}
+.section1 .header nav .navbar-toggler-icon {
+  filter: invert(1);
+}
+.section1 .header nav .separarLogo {
+  color: white;
+  margin: 0;
+  padding: 0;
+  margin-right: 5rem;
+}
+.section1 .header nav .separarLogo img {
+  width: 4rem;
+}
+.section1 .header nav .nav-link {
+  color: white;
+  font-weight: bold;
+  margin: 0 20px;
+}
+.section1 .header nav .nav-link:hover {
+  color: white;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+.section1 .cosa {
+  padding: 34vh var(--padding-section);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+.section1 .cosa .izq {
+  padding: 20px;
+}
+.section1 .cosa .izq h1 {
+  font-weight: bold;
+  font-size: 7rem;
+  font-family: "Bebas Neue";
+  letter-spacing: 1px;
+  margin: 0;
+}
+.section1 .cosa .izq a {
+  font-weight: bold;
+  color: white;
+  font-size: 1.4rem;
+}
+.section1 .cosa .izq p {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  margin-left: 20px;
+}
+.section1 .cosa .izq p img {
+  width: 30px;
+  filter: invert(1);
+}
+.section1 .cosa .izq p:hover {
+  text-decoration: underline;
+}
+.section1 .cosa .hr {
+  border: 1px solid white;
+}
+.section1 .cosa .register {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.section1 .cosa .register .field-group {
+  position: relative;
+  margin: 3px 0;
+  color: black;
+}
+.section1 .cosa .register .field-group .input-field {
+  background-color: rgba(255, 255, 255, 0.883);
+  border-radius: 7px;
+  border: 1px solid transparent;
+  color: black;
+  width: 100%;
+  margin: 5px 0px;
+  padding: 8px;
+  padding-left: 50px;
+}
+.section1 .cosa .register .field-group .input-field:hover {
+  color: black;
+  background-color: white;
+}
+.section1 .cosa .register .field-group .icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 1.6rem;
+}
+.section1 .cosa .register .field-group .input-field:focus ~ .icon {
+  color: black;
+  border-color: white;
+}
+.section1 .cosa .register .forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section1 .cosa .register .forgot p {
+  margin-top: 10px;
+  margin: 0;
+  font-style: italic;
+  color: var(--blanco-grisaceo);
+}
+.section1 .cosa .register .forgot button {
+  border: 1px solid transparent;
+  background-color: var(--color02);
+  border-radius: 7px;
+  color: white;
+  width: 100px;
+  padding: 8px;
+  font-weight: bold;
+}
+.section1 .cosa .register .forgot button:hover {
+  border: 1px solid white;
+  background-color: var(--color02);
+  border-radius: 7px;
+  color: white;
+  width: 100px;
+  padding: 8px;
+  font-weight: bold;
+}
+
+@media (width <= 992px) {
+  .section1 {
+    padding: 5vh var(--padding-section);
+  }
+  .section1 .header nav .navbar-toggler-icon {
+    filter: invert(1);
+  }
+  .section1 .header nav .navbar-toggler {
+    scale: 1.5;
+    color: white;
+    border: 1px solid white;
+  }
+  .section1 .header nav .separarLogo {
+    color: white;
+    margin: 0;
+    padding: 0;
+    margin-right: 5rem;
+  }
+  .section1 .header nav .separarLogo img {
+    width: 6rem;
+  }
+  .section1 .header nav .nav-link {
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 0 20px;
+  }
+  .section1 .header nav .nav-link:hover {
+    color: white;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+  }
+  .section1 .cosa {
+    padding: 30vh 0vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  .section1 .cosa .izq {
+    padding: 20px;
+  }
+  .section1 .cosa .izq h1 {
+    font-weight: bold;
+    font-size: 10rem;
+    font-family: "Bebas Neue";
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  .section1 .cosa .izq a {
+    font-weight: bold;
+    color: white;
+    font-size: 2.4rem;
+  }
+  .section1 .cosa .izq p {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    margin-left: 20px;
+  }
+  .section1 .cosa .izq p img {
+    width: 30px;
+    filter: invert(1);
+  }
+  .section1 .cosa .izq p:hover {
+    text-decoration: underline;
+  }
+  .section1 .cosa .hr {
+    display: none;
+    border: 1px solid white;
+  }
+  .section1 .cosa .register {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    scale: 1.2;
+  }
+  .section1 .cosa .register .field-group {
+    position: relative;
+    margin: 3px 0;
+  }
+  .section1 .cosa .register .field-group .input-field {
+    background-color: rgba(255, 255, 255, 0.907);
+    border-radius: 7px;
+    border: 1px solid transparent;
+    color: white;
+    width: 100%;
+    margin: 5px 0px;
+    padding: 8px;
+    padding-left: 50px;
+  }
+  .section1 .cosa .register .field-group .input-field:hover {
+    background-color: white;
+  }
+  .section1 .cosa .register .field-group .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.6rem;
+  }
+  .section1 .cosa .register .field-group .input-field:focus ~ .icon {
+    color: white;
+    border-color: white;
+  }
+  .section1 .cosa .register .forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section1 .cosa .register .forgot p {
+    margin-top: 10px;
+    margin: 0;
+    font-style: italic;
+    color: var(--blanco-grisaceo);
+  }
+  .section1 .cosa .register .forgot button {
+    border: 1px solid transparent;
+    background-color: var(--color02);
+    border-radius: 7px;
+    color: white;
+    width: 100px;
+    padding: 8px;
+    font-weight: bold;
+  }
+  .section1 .cosa .register .forgot button:hover {
+    border: 1px solid white;
+    background-color: var(--color02);
+    border-radius: 7px;
+    color: white;
+    width: 100px;
+    padding: 8px;
+    font-weight: bold;
+  }
+}
+@media (width <= 600px) {
+  .section1 {
+    padding: 5vh var(--padding-section);
+  }
+  .section1 .header nav .navbar-toggler-icon {
+    filter: invert(1);
+  }
+  .section1 .header nav .navbar-toggler {
+    scale: 1.5;
+    color: white;
+  }
+  .section1 .header nav .separarLogo {
+    color: white;
+    margin: 0;
+    padding: 0;
+    margin-right: 5rem;
+  }
+  .section1 .header nav .separarLogo img {
+    width: 6rem;
+  }
+  .section1 .header nav .nav-link {
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 0 20px;
+  }
+  .section1 .header nav .nav-link:hover {
+    color: white;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+  }
+  .section1 .cosa {
+    padding: 30vh 0vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+  .section1 .cosa .izq {
+    padding: 20px;
+    scale: 1.1;
+    text-align: center;
+  }
+  .section1 .cosa .izq h1 {
+    font-weight: bold;
+    font-size: 9rem;
+    font-family: "Bebas Neue";
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  .section1 .cosa .izq a {
+    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 10px;
+  }
+  .section1 .cosa .izq p {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .section1 .cosa .izq p img {
+    width: 30px;
+    filter: invert(1);
+  }
+  .section1 .cosa .izq p:hover {
+    text-decoration: underline;
+  }
+  .section1 .cosa .hr {
+    display: none;
+    border: 1px solid white;
+  }
+  .section1 .cosa .register {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    scale: 1.2;
+  }
+  .section1 .cosa .register .field-group {
+    position: relative;
+    margin: 3px 0;
+  }
+  .section1 .cosa .register .field-group .input-field {
+    background-color: rgba(255, 255, 255, 0.907);
+    border-radius: 7px;
+    border: 1px solid transparent;
+    color: white;
+    width: 100%;
+    margin: 5px 0px;
+    padding: 8px;
+    padding-left: 50px;
+  }
+  .section1 .cosa .register .field-group .input-field:hover {
+    background-color: white;
+  }
+  .section1 .cosa .register .field-group .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.6rem;
+  }
+  .section1 .cosa .register .field-group .input-field:focus ~ .icon {
+    color: white;
+    border-color: white;
+  }
+  .section1 .cosa .register .forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section1 .cosa .register .forgot p {
+    margin-top: 10px;
+    margin: 0;
+    font-style: italic;
+    color: var(--blanco-grisaceo);
+  }
+  .section1 .cosa .register .forgot button {
+    border: 1px solid transparent;
+    background-color: var(--color02);
+    border-radius: 7px;
+    color: white;
+    width: 100px;
+    padding: 8px;
+    font-weight: bold;
+  }
+  .section1 .cosa .register .forgot button:hover {
+    border: 1px solid white;
+    background-color: var(--color02);
+    border-radius: 7px;
+    color: white;
+    width: 100px;
+    padding: 8px;
+    font-weight: bold;
+  }
+}/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About</title>
+    <%- include('linkBootstrap') %>
+    <link rel="stylesheet" href="/stylesheets/oneConcert.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <main>
+        <section class="section1 row">
+          <div class="col-12">
+            <div class="header"><%- include('navbar') %></div>
+            <div class="profile">
+
+          
+              <div class="parteAlta">
+                <h1>EYE BAND</h1>
+                <div class="panelBotones">
+
+
+                  
+                  
+              <a href="/concerts/showEditConcert/<%= result.concert_id %>">
+                <img src="/assets/pencil-square.svg" alt="" />
+                <button class="btn btn-primary">Edit Concert</button>
+              </a>
+
+              <a
+                href="/concerts/delConcert/<%= result.concert_id %>/<%= result.band_id %>">
+              <img src="/assets/trash.svg" alt="" />
+                <button class="btn btn-primary">Delete Permanent</button>
+              </a>
+
+              <a
+                href="/concerts/delLogicConcert/<%= result.concert_id %>/<%= result.band_id %>">
+              <img src="/assets/x-square.svg" alt="" />
+                <button class="btn btn-primary">Delete Logic</button>
+              </a>
+
+              <a href="/bands/oneBand/<%= result.band_id %>">
+                <img src="/assets/arrow-return-left.svg" alt="" />
+                <button class="btn btn-primary">Back to band</button>
+                </div>
+              </div>
+
+
+
+
+              <div class="parteBaja">
+  
+        
+
+                <div class="bandas">
+
+                  <h2>Location</h2>
+                  <h3><%= result.city %></h3>
+                  <br>
+
+                  <h2>Address</h2>
+                  <h3><%= result.address %></h3>
+                  <br>
+
+                  <h2>Date</h2>
+                  <h3><%= result.date %></h3>
+                  <br>
+
+                  <h2>Time</h2>
+                  <h3><%= result.schedule %></h3>
+                </div>
+
+            
+              
+
+              </div>
+
+
+
+         
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <%- include('scriptBootstrap') %>
+  </body>
+</html>

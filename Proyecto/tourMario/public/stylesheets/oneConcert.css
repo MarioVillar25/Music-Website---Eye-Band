@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+:root {
+  --color01: #232943;
+  --color02: #ff256a;
+  --color03: #ff4e86;
+  --blanco-grisaceo: rgba(255, 255, 255, 0.485);
+  --colorbackground02: #0b0b0b;
+  --colorbackground01: #02060d;
+  --padding-section: 6vw;
+}
+
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section1 {
+  padding: 1vh var(--padding-section);
+  background-image: url(/assets/fondo_conciertos.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.447);
+  background-blend-mode: multiply;
+  color: white;
+}
+.section1 .header nav .navbar-toggler-icon {
+  filter: invert(1);
+}
+.section1 .header nav .separarLogo {
+  color: white;
+  margin: 0;
+  padding: 0;
+  margin-right: 5rem;
+}
+.section1 .header nav .separarLogo img {
+  width: 4rem;
+}
+.section1 .header nav .nav-link {
+  color: white;
+  font-weight: bold;
+  margin: 0 20px;
+}
+.section1 .header nav .nav-link:hover {
+  color: white;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+.section1 .profile {
+  padding: 15vh var(--padding-section);
+  margin: 2rem;
+  color: white;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.591);
+  box-shadow: rgba(226, 226, 226, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.section1 .profile .parteAlta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.section1 .profile .parteAlta h1 {
+  font-weight: bold;
+  font-size: 5rem;
+  font-family: "Bebas Neue";
+  letter-spacing: 1px;
+  margin: 0;
+}
+.section1 .profile .parteAlta .panelBotones {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section1 .profile .parteAlta .panelBotones a {
+  margin: 10px 25px;
+}
+.section1 .profile .parteAlta .panelBotones a img {
+  width: 22px;
+  filter: invert(1);
+}
+.section1 .profile .parteAlta .panelBotones button {
+  background: none;
+  border: 1px solid transparent;
+  font-weight: bold;
+}
+.section1 .profile .parteAlta .panelBotones button:hover {
+  color: var(--color02);
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+.section1 .profile .parteBaja {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.section1 .profile .parteBaja .bandas {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 30px 0;
+}
+.section1 .profile .parteBaja .bandas h2 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: white;
+}
+.section1 .profile .parteBaja .bandas h3 {
+  font-size: 1.2rem;
+  color: var(--blanco-grisaceo);
+}/*# sourceMappingURL=oneConcert.css.map */

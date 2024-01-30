@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About</title>
+    <%- include('linkBootstrap') %>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <link rel="stylesheet" href="/stylesheets/oneBand.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <main>
+        <section class="section1 row">
+          <div class="col-12">
+            <div class="header"><%- include('navbar') %></div>
+            <div class="profile">
+              <div class="parteAlta">
+                <h1>EYE BAND</h1>
+                <div class="panelBotones">
+                  <a href="/concerts/createConcert/<%= band.band_id %> ">
+                    <img src="/assets/plus-circle.svg" alt="" />
+                    <button class="btn btn-primary">Add Concert</button>
+                  </a>
+
+                  <a href="/Bands/showEditBand/<%= band.band_id %> ">
+                    <img src="/assets/pencil-square.svg" alt="" />
+
+                    <button class="btn btn-primary">Edit Band</button>
+                  </a>
+
+                  <a href="/Bands/delLogicBand/<%= band.band_id %> ">
+                    <img src="/assets/x-square.svg" alt="" />
+
+                    <button class="btn btn-primary">Delete Logic</button>
+                  </a>
+
+                  <a href="/Bands/delBand/<%= band.band_id %> ">
+                    <img src="/assets/trash.svg" alt="" />
+
+                    <button class="btn btn-primary">Delete Permanent</button>
+                  </a>
+                </div>
+              </div>
+
+              <div class="cosas">
+                <div class="imagen">
+                  <img src="/images/band/<%= band.photo %>" alt="" />
+                </div>
+
+                <div class="bandas">
+                  <h2><%= band.band_name %></h2>
+                  <h3><%= band.style %> Music</h3>
+                  <p><%= band.description %></p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                    nulla animi similique nemo quam, neque obcaecati voluptatem
+                    ipsum dolores, repudiandae provident odio doloremque.
+                  
+                  </p>
+                  <div>
+                    <p>
+                      <img src="/assets/envelope.svg" alt="" />
+                      <%= band.email %>
+                    </p>
+
+                    <div class="telefono">
+                      <p>
+                        <img src="/assets/telephone.svg" alt="" />
+                        <%= band.phone_number %>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="marcaFooter">
+                    <img src="/assets/marca.png" alt="" />
+                    <img src="/assets/logo04.png" alt="" />
+                    <img src="/assets/logo05.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section2 row">
+          <div class="col-12">
+            <h3>UPCOMING EVENTS</h3>
+            <hr />
+
+            <div class="tarjetas">
+              <% concerts.forEach((elem) => { %>
+
+              <div class="boxConcert">
+                <div class="date">
+                  <p>2022-04-04</p>
+                  <hr />
+                  <p><%= elem.schedule %></p>
+                </div>
+                <div class="foto">
+                  <img src="/images/concerts/<%= elem.image %>" alt="" />
+                </div>
+                <div class="city">
+                  <h4><%= elem.city %> - <%= elem.address %></h4>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicin...</p>
+                </div>
+                <div class="tickets">
+                  <a href="/concerts/showOneConcert/<%= elem. concert_id %>">
+                    <button class="btn btn-primary">See More</button>
+                  </a>
+                </div>
+              </div>
+              <% }) %>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <%- include('scriptBootstrap') %>
+  </body>
+</html>

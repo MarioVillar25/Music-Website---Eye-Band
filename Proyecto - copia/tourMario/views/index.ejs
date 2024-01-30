@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index</title>
+    <%- include('linkBootstrap') %>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <%- include('navbar') %>
+
+    <h1>We're in Index</h1>
+
+    <h1>All bands:</h1>
+
+
+    <div class="d-flex flex-wrap gap-4 p-5">
+      <% result.forEach((elem)=>{ %>
+      <div class="d-flex flex-column">
+        <img width="300px" src=<%= elem.photo ? `/images/band/${elem.photo}`:
+        "/images/default_profile.jpg" %>
+        <h4>Nombre: <%= elem.band_name %></h4>
+        <h4>Style: <%= elem.style %></h4>
+        <div>
+          <a href="/bands/oneBand/<%= elem.band_id %>">
+            <button class="btn btn-primary">ver mas</button>
+          </a>
+        </div>
+      </div>
+      <% }) %>
+    </div>
+
+    <%- include('scriptBootstrap') %>
+  </body>
+</html>

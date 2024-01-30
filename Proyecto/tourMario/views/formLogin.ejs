@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About</title>
+    <%- include('linkBootstrap') %>
+    <link rel="stylesheet" href="/stylesheets/login.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <main>
+        <section class="section1 row">
+          <div class="col-12">
+            <div class="header"><%- include('navbar') %></div>
+            <div class="cosa">
+              <div class="izq">
+                <h1>Eye Band</h1>
+                <p>
+                 
+                    <img src="/assets/arrow-right.svg" alt="" />
+                 
+                  <a href="/register">Create New Account</a> 
+                </p>
+              </div>
+              <div class="hr">
+              </div>
+              <div class="register">
+                <form action="/login" method="post">
+                  <div class="field-group">
+                    <input
+                      type="text"
+                      placeholder="Email"
+                      class="input-field"
+                      name="email"
+                    />
+                    <div class="icon">
+                      <img src="/assets/envelope.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="field-group">
+                    <input
+                      type="password"
+                      placeholder="Password"
+                      class="input-field"
+                      name="password"
+                    />
+                    <div class="icon">
+                      <img src="/assets/eye-slash.svg" alt="" />
+                    </div>
+                  </div>
+                  <h4><%= typeof message != 'undefined' ? message: null %></h4>
+                  <div class="forgot">
+                    <p>Forgot Password</p>
+                    <button>
+                      Login
+                  
+
+                    </button>
+
+                 
+                  </div>
+
+            
+                
+                   
+  
+                  </form>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <%- include('scriptBootstrap') %>
+  </body>
+</html>

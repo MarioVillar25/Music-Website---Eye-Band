@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>createConcert</title>
+    <%- include('linkBootstrap') %>
+    <link rel="stylesheet" href="/stylesheets/createConcert.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <main>
+        <section class="section1 row">
+          <div class="col-12">
+            <div class="header"><%- include('navbar') %></div>
+            <div class="cosa">
+              <div class="register">
+                <h3>Create Concert</h3>
+
+                <h4><%= typeof message != 'undefined' ? message: null %></h4>
+
+                <div>
+                  <form
+                    class="form-create"
+                    action="/concerts/createConcert/<%= band_id %> "
+                    method="post"
+                    enctype="multipart/form-data"
+                  >
+                    <div class="field-group">
+                      <input
+                        type="text"
+                        placeholder="Location"
+                        class="input-field"
+                        name="city"
+                      />
+                      <div class="icon">
+                        <img src="/assets/geo-alt-fill.svg" alt="" />
+                      </div>
+                    </div>
+
+                    <div class="field-group">
+                      <input
+                        type="text"
+                        placeholder="Address"
+                        class="input-field"
+                        name="address"
+                      />
+                      <div class="icon">
+                        <img src="/assets/map.svg" alt="" />
+                      </div>
+                    </div>
+
+                    <div class="field-group">
+                      <input
+                        type="text"
+                        placeholder="Date"
+                        class="input-field"
+                        name="date"
+                      />
+                      <div class="icon">
+                        <img src="/assets/calendar-check.svg" alt="" />
+                      </div>
+                    </div>
+
+                    <div class="field-group">
+                      <input
+                        type="text"
+                        placeholder="Schedule"
+                        class="input-field"
+                        name="schedule"
+                      />
+                      <div class="icon">
+                        <img src="/assets/clock.svg" alt="" />
+                      </div>
+                    </div>
+
+                    <div class="field-group">
+                      <label
+                        for="concert_img"
+                        class="input-fieldFile btn btn-primary"
+                        >+ Add Image</label
+                      >
+                      <input type="file" name="img" id="concert_img" hidden />
+                      <div class="icon">
+                        <img src="/assets/file-earmark-image.svg" alt="" />
+                      </div>
+                    </div>
+
+                    <div class="botonesForm">
+                      <button>aceptar</button>
+                      <button class="clean" type="button">
+                        <a href="/bands/oneBand/<%= band_id %>">cancelar </a>
+                      </button>
+
+                      <button class="clean" type="reset">reset</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="logo">
+                <img src="/assets/logo_pua.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <%- include('scriptBootstrap') %>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About</title>
+    <%- include('linkBootstrap') %>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <%- include('navbar') %>
+    <h1>Register Band</h1>
+    <h2>Esta será vista única</h2>
+    <h2>Ya le meteré estilos guapardos</h2>
+
+
+    <div class="d-flex justify-content-center">
+      <form class="form-create"
+      action="/register" 
+      method="post"
+      enctype="multipart/form-data"
+      
+      >
+        <div>
+          <label for="">email</label>
+          <input type="text" name="email" />
+        </div>
+        <div>
+          <label for="">password</label>
+          <input type="password" name="password" />
+        </div>
+     
+
+        <br>
+
+        <div>
+          <label for="">Band's name</label>
+          <input
+            type="text"
+            name="band_name"
+          />
+        </div>
+
+        <div>
+          <label for="">Style</label>
+        
+          <select 
+          type="text"
+          name="style" 
+          >
+          <option value="Rock">Rock</option>
+          <option value="K-Pop">K-Pop</option>
+          <option value="Metalcore">Metalcore</option>
+          <option value="Punk">Punk</option>
+          <option value="Indie/Folk">Indie/Folk</option>
+          <option value="Orchestra">Orchestra</option>
+
+        </select>
+        </div>
+     
+
+        <div>
+          <label for="">Description</label>
+          <textarea name="description" placeholder="About me..." cols="30" rows="5"></textarea>
+        </div>
+
+
+
+        <div>
+          <label for="">Phone Number</label>
+          <input
+            type="text"
+            name="phone_number"
+          />
+        </div>
+
+
+        <div>
+          <label for="band_img" class="btn btn-primary">+ Add Image</label>
+          <input 
+          type="file" 
+          name="img" 
+          id="band_img"
+          hidden
+          />
+        </div>
+
+        <h4><%= typeof message != 'undefined' ? message: null %></h4>
+
+
+
+        <button>aceptar</button>
+        <button type="button"><a href="/">cancelar </a></button>
+        <button type="reset">reset</button>
+      </form>
+    </div>
+
+    <%- include('scriptBootstrap') %>
+  </body>
+</html>

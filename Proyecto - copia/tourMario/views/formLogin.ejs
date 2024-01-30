@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About</title>
+    <%- include('linkBootstrap') %>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <%- include('navbar') %>
+    <h1>Login Menu</h1>
+
+    <form action="/login" method="post">
+      <div>
+          <label for="">email</label>
+          <input 
+              type="text"
+              name="email"
+          >
+      </div>
+      <div>
+          <label for="">password</label>
+          <input 
+              type="password"
+              name="password"
+          >
+      </div>
+      <h4><%= typeof message != 'undefined' ? message: null %></h4>
+      <button>aceptar</button>
+
+      
+          <button type="button"><a href="/">cancelar  </a></button>
+    
+      
+      <button type="reset">reset</button>
+  </form>
+  <p>No estas registrado? <a href="/register">registrate aquí</a> </p>
+
+
+
+
+
+    <%- include('scriptBootstrap') %>
+  </body>
+</html>

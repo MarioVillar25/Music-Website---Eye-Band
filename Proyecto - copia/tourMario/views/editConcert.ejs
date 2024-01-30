@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>edit Concert</title>
+    <%- include('linkBootstrap') %>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <%- include('navbar') %>
+    <h1>Edit Concert </h1>
+
+
+    <div class="d-flex justify-content-center">
+      <form class="form-create"
+      action="/concerts/editConcert/<%= result.concert_id %> " 
+      method="post"
+      enctype="multipart/form-data"
+      
+      >
+        <div>
+          <label for="">City</label>
+          <input type="text" name="city" 
+          value="<%= result.city %>"
+
+          
+          />
+        </div>
+        <div>
+          <label for="">address</label>
+          <input 
+          type="text"
+          value="<%= result.address %>"
+          name="address" 
+          />
+        </div>
+
+        <div>
+          <label for="">date</label>
+          <input 
+          type="date" 
+          value="<%= result.date %>"
+          name="date" 
+          />
+        </div>
+
+        <div>
+          <label for="">schedule</label>
+          <input 
+          type="time"
+          value="<%= result.schedule %>"
+          name="schedule" 
+          />
+        </div>
+     
+
+        <div>
+          <label for="concert_img" class="btn btn-primary">+ Add Image</label>
+          <input 
+          type="file" 
+          name="img" 
+          id="concert_img"
+          hidden
+          />
+        </div>
+
+        <h4><%= typeof message != 'undefined' ? message: null %></h4>
+
+
+
+        <button>aceptar</button>
+        <button type="button"><a href="/concerts/showOneConcert/<%= result.concert_id %>">cancelar </a></button>
+        <button type="reset">reset</button>
+      </form>
+    </div>
+
+    <%- include('scriptBootstrap') %>
+  </body>
+</html>
